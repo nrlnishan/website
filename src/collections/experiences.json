@@ -1,0 +1,23 @@
+[
+	{
+		"dates": "Dec 2019 · Present",
+		"role": "Lead iOS Engineer",
+		"company": "Amity Technologies (Previously Eko Corporation)",
+		"description": "",
+		"logo": "/assets/images/experiences/work-amity.jpeg"
+	},
+	{
+		"dates": "April 2018 · November 2019",
+		"role": "iOS Developer",
+		"company": "eSewa Fonepay",
+		"description": "",
+		"logo": "/assets/images/experiences/work-esewa.jpeg"
+	},
+	{
+		"dates": "April 2016 · Jan 2018 ",
+		"role": "iOS Developer",
+		"company": "A M Nepal",
+		"description": "",
+		"logo": "/assets/images/experiences/work-andmine.jpeg"
+	}
+]

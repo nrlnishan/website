@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Gym Diary",
+		"description": "Beautiful workout & fitness app",
+		"image": "/assets/images/projects/project-gymdiary.png",
+		"url": "https://apps.apple.com/us/app/gym-diary-workout-tracker-note/id1328908841?platform=iphone"
+	},
+	{
+		"name": "Expense Diary",
+		"description": "App to track your budgets and expenses.",
+		"image": "/assets/images/projects/project-expensediary.png",
+		"url": "https://apps.apple.com/us/app/expense-diary-budget-tracker/id1567197275?platform=iphone"
+	},
+	{
+		"name": "Easy Fast - Intermittent Fasting",
+		"description": "An intermittent fasting timer app",
+		"image": "/assets/images/projects/project-easyfast.png",
+		"url": "https://apps.apple.com/us/app/easy-fast-timer-diet-tracker/id6443566279?platform=iphone"
+	},
+	{
+		"name": "Five Task",
+		"description": "Yet another To Do app. I promise its better",
+		"image": "/assets/images/projects/project-fivetask.png",
+		"url": "https://apps.apple.com/us/app/5-task-organizer-to-do-list/id6469845974?platform=iphone"
+	}
+]
