@@ -1,0 +1,9 @@
+{
+    "tasktoday": {
+        "version": "2.1.0",
+        "title": "New app update available",
+        "message": "App version v2.1.0 is now available to install",
+        "url": "https://tasktoday.app/download",
+        "timestamp": "2025-06-07"
+    }
+}
