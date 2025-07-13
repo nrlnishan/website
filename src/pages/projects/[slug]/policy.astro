@@ -1,0 +1,45 @@
+---
+import projects from "../../../collections/projects.json";
+import PageHeading from "../../../components/page-heading.astro";
+import Layout from "../../../layouts/main.astro";
+
+export function getStaticPaths() {
+  return projects.map((project) => {
+    return {
+      params: { slug: project.slug },
+      props: { project },
+    };
+  });
+}
+
+const { project } = Astro.props;
+
+// Import the markdown file dynamically
+let PrivacyContent;
+try {
+  PrivacyContent = await import(`../../../content/privacy/${project.slug}.md`);
+} catch (error) {
+  console.warn(`Could not load privacy policy for ${project.slug}:`, error);
+}
+---
+
+<Layout title={`${project.name} - Privacy Policy`}>
+  <section class="relative z-20 max-w-4xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title={`${project.name} - Terms of Service & Privacy Policy`}
+      description={`This policy applies to all the information collected or submitted on ${project.name} app for iOS platform. By using this app, you agree that your personal information will be handled as described in this Policy.`}
+    />
+
+    <div class="prose prose-gray dark:prose-invert max-w-none">
+    </br>
+      {PrivacyContent ? (
+        <PrivacyContent.default />
+      ) : (
+        <div>
+          <h1>{project.name} Privacy Policy</h1>
+          <p>Privacy policy content not available.</p>
+        </div>
+      )}
+    </div>
+  </section>
+</Layout>

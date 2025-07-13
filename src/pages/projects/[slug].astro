@@ -1,0 +1,77 @@
+---
+import projects from "../../collections/projects.json";
+import Button from "../../components/button.astro";
+import PageHeading from "../../components/page-heading.astro";
+import Layout from "../../layouts/main.astro";
+
+export function getStaticPaths() {
+  return projects.map((project) => {
+    return {
+      params: { slug: project.slug },
+      props: { project },
+    };
+  });
+}
+
+const { project } = Astro.props;
+---
+
+<Layout title={project.name}>
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title={project.name}
+      description={project.longDescription}
+    />
+
+    <img src={project.image} alt={project.name} class="relative z-30 w-full my-10 rounded-xl" />
+
+    <div class="mb-6">
+      <span class="inline-block px-3 py-1 text-sm font-medium text-white bg-indigo-600 rounded-full">
+        {project.category}
+      </span>
+    </div>
+
+    <h2 class="mb-4 text-2xl font-bold dark:text-neutral-200">About This Project</h2>
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mb-6">
+      {project.longDescription}
+    </p>
+
+    <h2 class="mt-5 mb-4 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Key Features</h2>
+    <ul class="space-y-2 text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+      {project.features.map((feature) => (
+        <li class="flex items-start">
+          <span class="inline-block w-2 h-2 mt-2 mr-3 bg-indigo-600 rounded-full flex-shrink-0"></span>
+          {feature}
+        </li>
+      ))}
+    </ul>
+
+    <h2 class="mt-5 mb-4 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Technologies Used</h2>
+    <div class="flex flex-wrap gap-2 mb-6">
+      {project.technologies.map((tech) => (
+        <span class="px-3 py-1 text-sm font-medium text-gray-700 bg-gray-100 rounded-full dark:text-gray-300 dark:bg-gray-800">
+          {tech}
+        </span>
+      ))}
+    </div>
+
+    {project.highlights && (
+      <>
+        <h2 class="mt-5 mb-4 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Highlights</h2>
+        <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mb-6">
+          {project.highlights}
+        </p>
+      </>
+    )}
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <div class="mt-8">
+      <Button text="View on App Store" link={project.appStoreUrl} />
+    </div>
+
+    <div class="mt-8">
+      <Button text="Privacy Policy" link={`/projects/${project.slug}/policy`} />
+    </div>
+    </div>
+  </section>
+</Layout>
