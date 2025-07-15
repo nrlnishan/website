@@ -56,7 +56,7 @@
 			"Fasting history and statistics"
 		],
 		"highlights": "Trending in Health & Fitness category",
-		"contactEmail": "easyfastios@gmail.com",
+		"contactEmail": "feedback.nishan.apps@gmail.com",
 		"privacyPolicyFile": "/src/content/privacy/easy-fast.md"
 	},
 	{
@@ -76,7 +76,24 @@
 			"Smart task prioritization"
 		],
 		"highlights": "Rising star in Productivity apps",
-		"contactEmail": "fivetaskios@gmail.com",
+		"contactEmail": "feedback.nishan.apps@gmail.com",
 		"privacyPolicyFile": "/src/content/privacy/five-task.md"
+	},
+	{
+		"name": "Timo - Interval Timer",
+		"slug": "interval-timer",
+		"description": "Interval timer app.",
+		"longDescription": "Interval timer app for workouts, meditation and more.",
+		"image": "",
+		"appStoreUrl": "https://apps.apple.com/us/app/simple-interval-timer-timo/id6748284450?platform=iphone",
+		"category": "Productivity",
+		"technologies": ["Swift", "SwiftUI"],
+		"features": [
+			"Minimalistic design",
+			"Beautiful, minimal interface"
+		],
+		"highlights": "Coming soon to the App Store",
+		"contactEmail": "feedback.nishan.apps@gmail.com",
+		"privacyPolicyFile": "/src/content/privacy/timo-interval-timer.md"
 	}
 ]
