@@ -81,7 +81,7 @@
 	},
 	{
 		"name": "Timo - Interval Timer",
-		"slug": "interval-timer",
+		"slug": "timo-interval-timer",
 		"description": "Interval timer app.",
 		"longDescription": "Interval timer app for workouts, meditation and more.",
 		"image": "",
