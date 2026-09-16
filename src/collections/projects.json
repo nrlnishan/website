@@ -106,5 +106,26 @@
     "highlights": "Coming soon to the App Store",
     "contactEmail": "feedback.nishan.apps@gmail.com",
     "privacyPolicyFile": "/src/content/privacy/savings-goal-tracker.md"
+  },
+  {
+    "name": "My Subs - Subscription Tracker",
+    "slug": "my-subs",
+    "description": "Track your subscriptions & recurring bills",
+    "longDescription": "My Subs keeps every subscription and recurring bill in one place, so you always know what's renewing, when, and how much it costs. Add a subscription - streaming, gym, cloud storage, anything you're billed for - and My Subs tracks upcoming renewals, free-trial end dates, and your full charge history, all in one clean overview.",
+    "image": "/assets/images/projects/project-savings.png",
+    "appStoreUrl": "https://apps.apple.com/us/app/subscription-tracker-my-subs/id6812612475",
+    "category": "Finance",
+    "technologies": ["Swift", "SwiftUI", "CloudKit", "Widgets"],
+    "features": [
+      "Renewal reminders timed to your billing period",
+      "Separate trial-end alerts before you're charged",
+      "Spend at a glance: weekly, monthly & yearly totals with trend charts",
+      "Full charge history per subscription, with backfill support",
+      "Color-coded categories and avatars to stay organized",
+      "iCloud sync across iPhone and iPad"
+    ],
+    "highlights": "No subscriptions, no ads - free up to 3 subscriptions, with a one-time Pro unlock",
+    "contactEmail": "feedback.nishan.apps@gmail.com",
+    "privacyPolicyFile": "/src/content/privacy/my-subs.md"
   }
 ]
